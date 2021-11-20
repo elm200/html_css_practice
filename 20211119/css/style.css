@@ -265,3 +265,50 @@ footer ul.arrow li::before {
   left: 0;
 }
 
+/*-------------------------------------------
+SP
+-------------------------------------------*/
+@media screen and (max-width: 767px) {
+  /*-------------------------------------------
+  header
+  -------------------------------------------*/
+  header h1 {
+    padding: 20px 16px;
+  }
+
+  nav {
+    /* 横スクロールを表示 */
+    overflow-x: scroll;
+  }
+
+  .pickup ul {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .pickup li {
+    width: 100%;
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  main {
+    width: 100%;
+  }
+
+  aside {
+    width: 100%;
+  }
+
+  footer .content {
+    flex-direction: column;
+  }
+
+  footer section {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+}
