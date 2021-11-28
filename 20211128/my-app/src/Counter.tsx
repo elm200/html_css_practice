@@ -5,17 +5,20 @@ import "./Counter.css";
 type Props = {
   title?: string;
   initialCount?: number;
+  minCount?: number;
   countObserver?: (n: number) => void;
+
 };
 
 const Counter: VFC<Props> = ({
   title = "count",
-  initialCount = 0,
+  initialCount = 60,
+  minCount = 2,
   countObserver = (n: number) => console.log(n),
 }) => {
   const [count, setCount] = useState(initialCount);
   const increment = () => setCount((c) => c + 1);
-  const decrement = () => setCount((c) => (c >= 1 ? c - 1 : 0));
+  const decrement = () => setCount((c) => (c - 1 > minCount ? c - 1 : minCount));
 
   return (
     <Card>
