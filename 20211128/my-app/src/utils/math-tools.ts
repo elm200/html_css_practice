@@ -1,4 +1,4 @@
-const range = (m: number, n: number): number[] => [...Array(n).keys()].slice(m);
+const range = (m: number, n: number): number[] => [...Array(n + 1).keys()].slice(m);
 
 export const getPrimes = (maxRange: number): number[] =>
   range(2, maxRange).filter((n) => {
