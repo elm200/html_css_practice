@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="A layout example that shows off a responsive product landing page."
+    />
+    <title>Landing Page &ndash; Layout Examples &ndash; Pure</title>
+    <link rel="stylesheet" href="./assets/pure-min.css" />
+    <!-- <link rel="stylesheet" href="./assets/grids-responsive-min.css"> -->
+    <link
+      rel="stylesheet"
+      href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css"
+    />
+    <link rel="stylesheet" href="./assets/styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <main>
+        <div class="splash">
+          <img
+            class="logo"
+            src="./assets/logo_pure@2x.png"
+            alt="pure.css-logo"
+          />
+          <h2>Checkout Form</h2>
+          <p class="lead">
+            Below is an example form built entirely with Pure.css’s form
+            controls. Each required form group has a validation state that can
+            be triggered by attempting to submit the form without completing it.
+          </p>
+        </div>
+        <div class="content pure-g">
+          <div class="pure-u-2-3">
+            <h3>Billing address</h3>
+            <form class="pure-form pure-form-stacked" novalidate>
+              <fieldset>
+                <div class="pure-g">
+                  <div class="pure-u-1-2">
+                    <label for="firstName">First name</label>
+                    <input
+                      class="pure-u-23-24"
+                      type="text"
+                      id="firstName"
+                      placeholder=""
+                      required
+                    />
+                    <div class="pure-form-message">
+                      Valid first name is required.
+                    </div>
+                  </div>
+                  <div class="pure-u-1-2">
+                    <label for="lastName">Last name</label>
+                    <input
+                      class="pure-u-23-24"
+                      type="text"
+                      id="lastName"
+                      placeholder=""
+                      required
+                    />
+                    <div class="pure-form-message">
+                      Valid last name is required.
+                    </div>
+                  </div>
+
+                  <div class="pure-u-1">
+                    <label for="username">Username</label>
+                    <input
+                      class="pure-u-23-24"
+                      type="text"
+                      id="username"
+                      placeholder="Username"
+                      required=""
+                    />
+                    <div class="pure-form-message">
+                      Your username is required.
+                    </div>
+                  </div>
+
+                  <div class="pure-u-1">
+                    <label for="email"
+                      >Email <span class="text-muted">(Optional)</span></label
+                    >
+                    <input
+                      class="pure-u-23-24"
+                      type="email"
+                      id="email"
+                      placeholder="you@example.com"
+                    />
+                    <div class="pure-form-message">
+                      Please enter a valid email address for shipping updates.
+                    </div>
+                  </div>
+
+                  <div class="pure-u-1">
+                    <label for="address">Address</label>
+                    <input
+                      type="text"
+                      class="pure-u-23-24"
+                      id="address"
+                      placeholder="1234 Main St"
+                      required=""
+                    />
+                    <div class="pure-form-message">
+                      Please enter your shipping address.
+                    </div>
+                  </div>
+
+                  <div class="pure-u-1">
+                    <label for="address2"
+                      >Address 2
+                      <span class="text-muted">(Optional)</span></label
+                    >
+                    <input
+                      class="pure-u-23-24"
+                      type="text"
+                      class="form-control"
+                      id="address2"
+                      placeholder="Apartment or suite"
+                    />
+                  </div>
+
+                  <div class="pure-u-10-24">
+                    <label for="country">Country</label>
+                    <select class="pure-u-23-24" id="country" required="">
+                      <option value="">Choose...</option>
+                      <option>United States</option>
+                    </select>
+                    <div class="pure-form-message">
+                      Please select a valid country.
+                    </div>
+                  </div>
+
+                  <div class="pure-u-8-24">
+                    <label for="state">State</label>
+                    <select class="pure-u-23-24" id="state" required="">
+                      <option value="">Choose...</option>
+                      <option>California</option>
+                    </select>
+                    <div class="pure-form-message">
+                      Please provide a valid state.
+                    </div>
+                  </div>
+
+                  <div class="pure-u-5-24">
+                    <label for="zip">Zip</label>
+                    <input
+                      type="text"
+                      class="pure-u-23-24"
+                      id="zip"
+                      placeholder=""
+                      required=""
+                    />
+                    <div class="pure-form-message">Zip code required.</div>
+                  </div>
+                  <hr class="pure-u-1" />
+                  <div class="pure-u-1">
+                    <div>
+                      <input type="checkbox" id="same-address" />
+                      <label class="d-inline-block" for="same-address">
+                        Shipping address is the same as my billing address
+                      </label>
+                    </div>
+                    <div>
+                      <input type="checkbox" id="save-info" />
+                      <label class="d-inline-block" for="save-info"
+                        >Save this information for next time</label
+                      >
+                    </div>
+                  </div>
+                  <hr class="pure-u-1" />
+
+                  <div class="pure-u-1">
+                    <h3>Payment</h3>
+                    <div class="form-check">
+                      <input
+                        id="credit"
+                        name="paymentMethod"
+                        type="radio"
+                        checked=""
+                        required=""
+                      />
+                      <label class="d-inline-block" for="credit"
+                        >Credit card</label
+                      >
+                    </div>
+                    <div class="form-check">
+                      <input
+                        id="debit"
+                        name="paymentMethod"
+                        type="radio"
+                        required=""
+                      />
+                      <label class="d-inline-block" for="debit"
+                        >Debit card</label
+                      >
+                    </div>
+                    <div class="form-check">
+                      <input
+                        id="paypal"
+                        name="paymentMethod"
+                        type="radio"
+                        required=""
+                      />
+                      <label class="d-inline-block" for="paypal">PayPal</label>
+                    </div>
+                  </div>
+
+                  <div class="pure-u-1-2">
+                    <label for="cc-name">Name on card</label>
+                    <input
+                      class="pure-u-23-24"
+                      type="text"
+                      id="cc-name"
+                      placeholder=""
+                      required=""
+                    />
+                    <small class="text-muted"
+                      >Full name as displayed on card</small
+                    >
+                    <div class="pure-form-message">
+                      Name on card is required
+                    </div>
+                  </div>
+
+                  <div class="pure-u-1-2">
+                    <label for="cc-number">Credit card number</label>
+                    <input
+                      class="pure-u-23-24"
+                      type="text"
+                      id="cc-number"
+                      placeholder=""
+                      required=""
+                    />
+                    <div class="pure-form-message">
+                      Credit card number is required
+                    </div>
+                  </div>
+
+                  <div class="pure-u-1-3">
+                    <label for="cc-expiration">Expiration</label>
+                    <input
+                      class="pure-u-1-2"
+                      type="text"
+                      id="cc-expiration"
+                      placeholder=""
+                      required=""
+                    />
+                    <div class="pure-form-message">
+                      Expiration date required
+                    </div>
+                  </div>
+
+                  <div class="pure-u-1-3">
+                    <label for="cc-cvv">CVV</label>
+                    <input
+                      class="pure-u-1-2"
+                      type="text"
+                      id="cc-cvv"
+                      placeholder=""
+                      required=""
+                    />
+                    <div class="pure-form-message">Security code required</div>
+                  </div>
+                  <hr class="pure-u-1" />
+                  <div class="pure-u-1">
+                    <button class="pure-button pure-button-primary pure-u-1" type="submit">
+                      Continue to checkout
+                    </button>
+                  </div>
+                </div>
+              </fieldset>
+            </form>
+          </div>
+        </div>
+      </main>
+      <footer></footer>
+    </div>
+  </body>
+</html>
